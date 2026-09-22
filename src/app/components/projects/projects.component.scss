@@ -1,0 +1,37 @@
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1px;
+  margin-top: 2.5rem;
+  border: 1px solid var(--line);
+  background: var(--line);
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.project {
+  padding: 1.6rem 1.5rem;
+  background: var(--surface);
+}
+
+.project h3 {
+  margin: 0;
+  font-size: 1.15rem;
+}
+
+.project p {
+  margin: 0.7rem 0 0;
+  color: var(--muted);
+}
+
+.project__stack {
+  font-size: 0.88rem !important;
+  font-weight: 600;
+  color: var(--accent) !important;
+}
+
+@media (max-width: 768px) {
+  .project-list {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,14 @@
+<section class="section achievements" id="achievements">
+  <div class="container">
+    <p class="section-label">Achievements</p>
+    <h2 class="section-title">Impact that mattered</h2>
+    <div class="achievement-list">
+      @for (item of items; track item.title) {
+        <article>
+          <h3>{{ item.title }}</h3>
+          <p>{{ item.detail }}</p>
+        </article>
+      }
+    </div>
+  </div>
+</section>

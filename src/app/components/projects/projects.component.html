@@ -1,0 +1,19 @@
+<section class="section projects" id="projects">
+  <div class="container">
+    <p class="section-label">Projects</p>
+    <h2 class="section-title">Selected work</h2>
+    <p class="section-lead">
+      Enterprise systems delivered across manufacturing, healthcare, finance, and operations.
+    </p>
+
+    <div class="project-list">
+      @for (project of projects; track project.title) {
+        <article class="project">
+          <h3>{{ project.title }}</h3>
+          <p>{{ project.summary }}</p>
+          <p class="project__stack">{{ project.stack }}</p>
+        </article>
+      }
+    </div>
+  </div>
+</section>

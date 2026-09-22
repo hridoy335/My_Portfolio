@@ -1,0 +1,22 @@
+<section class="section skills" id="skills">
+  <div class="container">
+    <p class="section-label">Skills</p>
+    <h2 class="section-title">Tools I work with</h2>
+    <p class="section-lead">
+      A practical stack for enterprise APIs, data layers, and modern Angular front ends.
+    </p>
+
+    <div class="skill-groups">
+      @for (group of groups; track group.title) {
+        <div class="skill-group">
+          <h3>{{ group.title }}</h3>
+          <ul>
+            @for (item of group.items; track item) {
+              <li>{{ item }}</li>
+            }
+          </ul>
+        </div>
+      }
+    </div>
+  </div>
+</section>

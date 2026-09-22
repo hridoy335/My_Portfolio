@@ -1,0 +1,36 @@
+<section class="section education" id="education">
+  <div class="container">
+    <p class="section-label">Education</p>
+    <h2 class="section-title">Background & training</h2>
+    <p class="section-lead">
+      Academic foundation in computer engineering, plus focused .NET and web development training.
+    </p>
+
+    <div class="edu-grid">
+      <div>
+        <h3 class="edu-heading">Education</h3>
+        <ul class="edu-list">
+          @for (item of education; track item.title) {
+            <li>
+              <p class="edu-title">{{ item.title }}</p>
+              <p class="edu-place">{{ item.place }}</p>
+              <p class="edu-meta">{{ item.meta }}</p>
+            </li>
+          }
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="edu-heading">Training / Courses</h3>
+        <ul class="edu-list">
+          @for (item of training; track item.title) {
+            <li>
+              <p class="edu-title">{{ item.title }}</p>
+              <p class="edu-place">{{ item.org }}</p>
+            </li>
+          }
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

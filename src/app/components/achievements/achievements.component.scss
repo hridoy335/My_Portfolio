@@ -1,0 +1,29 @@
+.achievement-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+  margin-top: 2rem;
+}
+
+.achievement-list article {
+  padding: 1.4rem 1.35rem;
+  border-top: 2px solid var(--ink);
+  background: rgba(255, 255, 255, 0.55);
+}
+
+.achievement-list h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  text-transform: capitalize;
+}
+
+.achievement-list p {
+  margin: 0.7rem 0 0;
+  color: var(--muted);
+}
+
+@media (max-width: 768px) {
+  .achievement-list {
+    grid-template-columns: 1fr;
+  }
+}

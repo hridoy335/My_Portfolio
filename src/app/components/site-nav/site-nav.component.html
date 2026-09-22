@@ -1,0 +1,31 @@
+<header class="nav" [class.nav--scrolled]="scrolled()">
+  <div class="container nav__inner">
+    <a class="nav__brand" href="#top" (click)="closeMenu()">HR</a>
+
+    <button
+      class="nav__toggle"
+      type="button"
+      [attr.aria-expanded]="menuOpen()"
+      aria-label="Toggle menu"
+      (click)="toggleMenu()"
+    >
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="nav__links" [class.nav__links--open]="menuOpen()" aria-label="Primary">
+      @for (link of links; track link.href) {
+        <a [href]="link.href" (click)="closeMenu()">{{ link.label }}</a>
+      }
+      <a
+        class="nav__github"
+        href="https://github.com/hridoy335"
+        target="_blank"
+        rel="noopener noreferrer"
+        (click)="closeMenu()"
+      >
+        GitHub
+      </a>
+    </nav>
+  </div>
+</header>
