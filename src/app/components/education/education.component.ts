@@ -11,17 +11,17 @@ export class EducationComponent {
     {
       title: 'BSCE — Computer Engineering',
       place: 'International University of Business Agriculture and Technology',
-      meta: '2019 · Uttara, Dhaka · GPA 3.30 / 4.00',
+      meta: '2019 · Uttara, Dhaka',
     },
     {
       title: 'H.S.C — Science',
       place: 'Collector Public College, Nilphamari',
-      meta: '2012 · Dinajpur Board · GPA 3.80 / 5.00',
+      meta: '2012 · Dinajpur Board',
     },
     {
       title: 'S.S.C — Science',
       place: 'Shonaroy Shangalshi High School, Nilphamari',
-      meta: '2014 · Dinajpur Board · GPA 4.13 / 5.00',
+      meta: '2014 · Dinajpur Board',
     },
   ];
 
