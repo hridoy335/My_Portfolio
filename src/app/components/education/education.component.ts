@@ -16,12 +16,12 @@ export class EducationComponent {
     {
       title: 'H.S.C — Science',
       place: 'Collector Public College, Nilphamari',
-      meta: '2012 · Dinajpur Board',
+      meta: '2014 · Dinajpur Board',
     },
     {
       title: 'S.S.C — Science',
       place: 'Shonaroy Shangalshi High School, Nilphamari',
-      meta: '2014 · Dinajpur Board',
+      meta: '2012 · Dinajpur Board',
     },
   ];
 
